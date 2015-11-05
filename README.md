@@ -29,6 +29,7 @@ Supported Mesos Versions
 
 This cookbook supports the following Apache Mesos versions:
 
+* 0.23.1
 * 0.23.0
 * 0.22.1
 * 0.22.0
@@ -117,7 +118,7 @@ json_class:          Chef::Role
 name:                mesos_master
 override_attributes:
   mesos:
-    version: 0.23.0
+    version: 0.23.1
     master:
       flags:
         cluster: 'mesos-sandbox'
@@ -137,7 +138,7 @@ json_class:          Chef::Role
 name:                mesos_slave
 override_attributes:
   mesos:
-    version: 0.23.0
+    version: 0.23.1
     slave:
       flags:
         master: 'zk://127.0.0.1:2181/mesos'
