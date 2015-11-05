@@ -48,7 +48,7 @@ suites:
     - recipe[mesos::slave]
   attributes:
     mesos:
-      version: '0.23.0'
+      version: '0.23.1'
       master:
         flags:
           authenticate: no
