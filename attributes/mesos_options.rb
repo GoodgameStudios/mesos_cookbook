@@ -6,18 +6,6 @@ default['mesos']['options'] = {
       'flag' => false,
       'deprecated' => false
     },
-    'advertise_ip' => {
-      'version' => ['0.23.0'],
-      'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
-    'advertise_port' => {
-      'version' => ['0.23.0'],
-      'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
     'allocation_interval' => {
       'version' => ['0.20.0', '0.20.1', '0.21.0', '0.21.1', '0.22.0', '0.22.1', '0.23.0', '0.23.1'],
       'default' => '1secs',
@@ -45,12 +33,6 @@ default['mesos']['options'] = {
     'authenticators' => {
       'version' => ['0.22.0', '0.22.1', '0.23.0', '0.23.1'],
       'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
-    'authorizers' => {
-      'version' => ['0.23.0'],
-      'default' => 'local',
       'flag' => false,
       'deprecated' => false
     },
@@ -104,12 +86,6 @@ default['mesos']['options'] = {
     },
     'ip' => {
       'version' => ['0.20.0', '0.20.1', '0.21.0', '0.21.1', '0.22.0', '0.22.1', '0.23.0', '0.23.1'],
-      'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
-    'ip_discovery_command' => {
-      'version' => ['0.23.0'],
       'default' => '',
       'flag' => false,
       'deprecated' => false
