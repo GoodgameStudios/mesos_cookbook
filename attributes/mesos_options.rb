@@ -381,7 +381,7 @@ default['mesos']['options'] = {
       'deprecated' => false
     },
     'docker_mesos_image' => {
-      'version' => ['0.23.1'],
+      'version' => ['0.23.0', '0.23.1'],
       'default' => '',
       'flag' => false,
       'deprecated' => false
@@ -405,7 +405,7 @@ default['mesos']['options'] = {
       'deprecated' => true
     },
     'docker_socket' => {
-      'version' => ['0.23.1'],
+      'version' => ['0.23.0', '0.23.1'],
       'default' => '/var/run/docker.sock',
       'flag' => false,
       'deprecated' => false
@@ -416,28 +416,10 @@ default['mesos']['options'] = {
       'flag' => false,
       'deprecated' => false
     },
-    'egress_limit_per_container' => {
-      'version' => ['0.23.0'],
-      'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
     'enforce_container_disk_quota' => {
       'version' => ['0.22.0', '0.22.1', '0.23.0', '0.23.1'],
       'default' => false,
       'flag' => true,
-      'deprecated' => false
-    },
-    'ephemeral_ports_per_container' => {
-      'version' => ['0.23.0'],
-      'default' => 1024,
-      'flag' => false,
-      'deprecated' => false
-    },
-    'eth0_name' => {
-      'version' => ['0.23.0'],
-      'default' => '',
-      'flag' => false,
       'deprecated' => false
     },
     'executor_environment_variables' => {
@@ -465,19 +447,19 @@ default['mesos']['options'] = {
       'deprecated' => false
     },
     'fetcher_cache_dir' => {
-      'version' => ['0.23.1'],
+      'version' => ['0.23.0', '0.23.1'],
       'default' => '/tmp/mesos/fetch',
       'flag' => false,
       'deprecated' => false
     },
     'fetcher_cache_size' => {
-      'version' => ['0.23.1'],
+      'version' => ['0.23.0', '0.23.1'],
       'default' => '2GB',
       'flag' => false,
       'deprecated' => false
     },
     'firewall_rules' => {
-      'version' => ['0.23.1'],
+      'version' => ['0.23.0', '0.23.1'],
       'default' => '',
       'flag' => false,
       'deprecated' => false
@@ -530,12 +512,6 @@ default['mesos']['options'] = {
       'flag' => false,
       'deprecated' => false
     },
-    'ip_discovery_command' => {
-      'version' => ['0.23.0'],
-      'default' => '',
-      'flag' => false,
-      'deprecated' => false
-    },
     'isolation' => {
       'version' => ['0.20.0', '0.20.1', '0.21.0', '0.21.1', '0.22.0', '0.22.1', '0.23.0', '0.23.1'],
       'default' => 'posix/cpu,posix/mem',
@@ -545,12 +521,6 @@ default['mesos']['options'] = {
     'launcher_dir' => {
       'version' => ['0.20.0', '0.20.1', '0.21.0', '0.21.1', '0.22.0', '0.22.1', '0.23.0', '0.23.1'],
       'default' => '/usr/libexec/mesos',
-      'flag' => false,
-      'deprecated' => false
-    },
-    'lo_name' => {
-      'version' => ['0.23.0'],
-      'default' => '',
       'flag' => false,
       'deprecated' => false
     },
@@ -672,12 +642,6 @@ default['mesos']['options'] = {
       'version' => ['0.23.0', '0.23.1'],
       'default' => true,
       'flag' => true,
-      'deprecated' => false
-    },
-    'sandbox_directory' => {
-      'version' => ['0.23.0'],
-      'default' => '/mnt/mesos/sandbox',
-      'flag' => false,
       'deprecated' => false
     },
     'slave_subsystems' => {
