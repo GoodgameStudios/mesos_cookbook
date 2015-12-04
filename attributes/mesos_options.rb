@@ -240,7 +240,7 @@ default['mesos']['options'] = {
       'flag' => false,
       'deprecated' => false
     },
-    'slave_register_timeout' => {
+    'slave_reregister_timeout' => {
       'version' => ['0.20.0', '0.20.1', '0.21.0', '0.21.1', '0.22.0', '0.22.1', '0.23.0', '0.23.1', '0.24.1'],
       'default' => '10mins',
       'flag' => false,
