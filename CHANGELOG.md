@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.4.2] = 2015-12-04
+### Added
+- Added support for Apache Mesos 0.24.1
+
+### Changed
+- Removed options for Mesos 0.20.x from attribute/mesos_options.rb
+- Removed Mesos 0.20.x from kitchen.yml
+
 ## [3.4.1] - 2015-12-04
 ### Added
 - Added support for Apache Mesos 0.23.1.
