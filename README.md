@@ -29,6 +29,7 @@ Supported Mesos Versions
 
 This cookbook supports the following Apache Mesos versions:
 
+* 0.24.1
 * 0.23.1
 * 0.23.0
 * 0.22.1
